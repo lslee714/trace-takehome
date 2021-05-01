@@ -35,7 +35,7 @@ const FarmFiltersComponent = () => {
       <section className='body' onKeyDown={onFiltersKeyDown}>
         {/*separate filters could be their own components, but keep it all in here for now for simplicity sake*/}
         <article className='farm-filter'>
-          <label htmlFor='name-search'>Farm Name</label>
+          <label htmlFor='name-search'>Farm / Field(s) Name</label>
           <FormControl id='name-search' value={filters.name} className='by-name-filter' placeholder='Search by name' onChange={
             (e) => setFilters({
               ...filters,

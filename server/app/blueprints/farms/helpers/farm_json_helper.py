@@ -26,7 +26,7 @@ class FarmJsonHelper:
         results = {}
         for id, farm in self.farms.items():
             revenue = farm['revenue']
-            name = farm['name']
+            name = self.get_farm_name(farm)
             #doing "OR"s rather than "AND"s might make more sense for "AND" in a bigger dataset?
             if farm_name and farm_name.lower() in name.lower():
                 results[id] = farm
@@ -36,3 +36,9 @@ class FarmJsonHelper:
                 results[id] = farm #this could/will override results but we dont care in an OR situation
         return results
 
+    def get_farm_name(self, farm):
+        """Return an string concat between farm name + its fields"""
+        name = farm['name']
+        farm_field_names = ' '.join(name.lower() for name in farm['fields'])
+        name += f' {farm_field_names}'
+        return name
