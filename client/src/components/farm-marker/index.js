@@ -7,7 +7,7 @@ import { CENTER_OF_STATES } from "../../constants";
 
 const FarmMarkerComponent = (props) => {
   const { farm } = props;
-  const traceBlue = '#99dfff';
+  const traceTeal = '#2ec4b2';
 
   //arbitrary number to set the circle size of marker
   const sizeOfMarker = 115000
@@ -21,7 +21,7 @@ const FarmMarkerComponent = (props) => {
 
   return (
     <Circle center={{lat: CENTER_OF_STATES[farm.state][0], lon: CENTER_OF_STATES[farm.state][1]}}
-      pathOptions={{color: traceBlue}}
+      pathOptions={{color: traceTeal}}
       radius={sizeOfMarker}>
       <Tooltip>
         <article className='farm-info'>
