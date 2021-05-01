@@ -4,14 +4,16 @@ export const getFarmsUrl = (name, minRevenue, maxRevenue) => {
     return url;
   }
   const urlParams = new URLSearchParams();
+  //using snake case to utilize pythons kwargs at API layer
+  //could make a util thing for that e.g. jsToPython or something
   if(name) {
-    urlParams.set('farm-name', name);
+    urlParams.set('farm_name', name);
   }
   if(minRevenue) {
-    urlParams.set('min-revenue', minRevenue);
+    urlParams.set('min_revenue', minRevenue);
   }
   if(maxRevenue) {
-    urlParams.set('max-revenue', maxRevenue)
+    urlParams.set('max_revenue', maxRevenue)
   }
   return `${url}?${urlParams.toString()}`;
 };
