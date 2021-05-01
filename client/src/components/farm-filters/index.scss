@@ -1,0 +1,50 @@
+
+//also stole from website, really would love to use sass better (mixins/palette/etc)
+$trace-blue: #1f4266;
+
+$filter-spacing: 15px;
+
+.farm-filters {
+  height: 85%;
+  width: 90%;
+  background-color: white;
+  margin-top: 15%;
+  box-shadow: -1px 5px 19px -10px rgba(138,143,182,1);
+  border-radius: 0.25rem;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $trace-blue;
+    padding: $filter-spacing;
+    margin-bottom: $filter-spacing;
+    label {
+      color: $trace-blue;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .body {
+    label {
+      font-weight: 600;
+      color: $trace-blue;
+    }
+    .farm-filter {
+      margin-top: $filter-spacing;
+      padding-left: $filter-spacing;
+      padding-right: $filter-spacing;
+    }
+  }
+  .or-text {
+    color: $trace-blue;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .search-btn {
+    margin-top: $filter-spacing;
+    margin-right: $filter-spacing;
+    float: right;
+  }
+}

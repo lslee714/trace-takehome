@@ -1,9 +1,19 @@
+import FarmPageComponent from "./components/farm-page";
+import TraceNavComponent from "./components/nav";
 
 function App() {
+
   return (
-    <div className="App">
-      <h1>Hello world</h1>
-    </div>
+    <main>
+      {/*/
+        Could have a layout component w/ routing if we really wanted to get fancy but
+        This is just going to be a one pager app
+      /*/}
+      <TraceNavComponent/>
+      <section className='contents'>
+        <FarmPageComponent/>
+      </section>
+    </main>
   );
 }
 

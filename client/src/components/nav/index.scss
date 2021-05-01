@@ -1,0 +1,9 @@
+.navbar {
+  padding-top: 0;
+  height: 10%;
+  //stole this from website xD
+  background: -webkit-gradient(linear, right bottom, left top,
+          from(rgba(76, 175, 80, 0.4)), color-stop(33%, rgba(68, 218, 200, 0.4)),
+          color-stop(66%, rgba(127, 187, 244, 0.4)), to(rgba(245, 245, 245, 0.4)));
+  box-shadow: 0 4px 2px -2px gray;
+}
