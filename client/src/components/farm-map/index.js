@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 import { CENTER_OF_US} from "../../constants";
-
+import FarmMarkersComponent from "../farm-markers";
 import MapConsumer from './MapConsumer';
 
 import './index.scss';
-import FarmMarkersComponent from "../farm-markers";
 
 const FarmMapComponent = () => {
   const [coordinates, setCoordinates] = useState(CENTER_OF_US);
