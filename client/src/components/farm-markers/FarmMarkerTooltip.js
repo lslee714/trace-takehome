@@ -27,8 +27,8 @@ const FarmMarkerToolTipComponent = (props) => {
         <tbody>
         {
           Object.entries(farm.fields).map(
-            ([name, field]) =>
-              <tr>
+            ([name, field], idx) =>
+              <tr key={idx}>
                 <td>{name}</td>
                 <td>{field.crop}</td>
                 <td>{field["size (acres)"]}</td>
