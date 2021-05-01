@@ -95,5 +95,21 @@
                 "size (acres)": 20
             }
         }
+    },
+    "7": {
+        "name": "The Shire",
+        "state": "IA",
+        "soil_type": "Tama",
+        "revenue": 10000,
+        "fields": {
+            "Hobbiton" : {
+                "crop": "carrot",
+                "size (acres)": 50
+            },
+            "Buckland" : {
+                "crop": "onion",
+                "size (acres)": 50
+            }
+        }
     }
 }
