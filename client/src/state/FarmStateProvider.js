@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import FarmStateContext from './FarmStateContext';
-import {GET_FARMS_URL} from "../urls";
+import {getFarmsUrl} from "../urls";
 
 
 //provider for farm state context
@@ -18,8 +18,9 @@ const FarmStateProvider = (props) => {
   }, []);
 
   //method to get farms from API endpoint
-  const getFarms = useCallback( async () => {
-    const response = await fetch(GET_FARMS_URL);
+  const getFarms = useCallback( async (nameSearch,  minRevenue, maxRevenue) => {
+    const url = getFarmsUrl(nameSearch, minRevenue, maxRevenue);
+    const response = await fetch(url);
     const json = await response.json();
     loadFarms(json);
   }, [loadFarms]);
