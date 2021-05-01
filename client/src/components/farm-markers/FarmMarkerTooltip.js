@@ -37,6 +37,7 @@ const FarmMarkerToolTipComponent = (props) => {
         }
         </tbody>
       </Table>
+      <label className='font-weight-bold'>Revenue: ${farm.revenue.toLocaleString()}</label>
     </>
   );
 };

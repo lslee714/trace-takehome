@@ -37,8 +37,9 @@ class FarmJsonHelper:
         return results
 
     def get_farm_name(self, farm):
-        """Return an string concat between farm name + its fields"""
+        """Return an string concat between farm name + its fields + soil types"""
         name = farm['name']
         farm_field_names = ' '.join(name.lower() for name in farm['fields'])
         name += f' {farm_field_names}'
+        name += f' {farm["soil_type"]}'
         return name
