@@ -1,14 +1,12 @@
 
 //also stole from website, really would love to use sass better (mixins/palette/etc)
 $trace-blue: #1f4266;
-$trace-gray: #e0e0e0;
 
 .farm-filters {
   height: 85%;
   width: 90%;
-  background-color: $trace-gray;
-  margin-top: 10%;
-  margin-left: 10%;
+  background-color: white;
+  margin-top: 15%;
   box-shadow: -1px 5px 19px -10px rgba(138,143,182,1);
   border-radius: 0.25rem;
 

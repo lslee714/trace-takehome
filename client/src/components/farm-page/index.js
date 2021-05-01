@@ -15,10 +15,10 @@ const FarmPageComponent = () => {
     <>
       <FarmStateProvider>
         <Row className='h-100'>
-          <Col sm={4}>
+          <Col sm={3}>
             <FarmFiltersComponent/>
           </Col>
-          <Col sm={8}>
+          <Col sm={9}>
             <FarmMapComponent/>
           </Col>
         </Row>
