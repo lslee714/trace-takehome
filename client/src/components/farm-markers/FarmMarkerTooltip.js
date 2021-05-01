@@ -6,7 +6,10 @@ const FarmMarkerToolTipComponent = (props) => {
 
   return (
     <>
-      <label className='font-weight-bold'>{ farm.name }</label>
+      <article className='farm-header d-flex'>
+        <label className='font-weight-bold'>{ farm.name }</label>
+        <label className='font-weight-bold ml-auto'>{ farm.soil_type }</label>
+      </article>
       <Table striped bordered>
         <thead>
           <tr>
