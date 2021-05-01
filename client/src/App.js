@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 
 
-
+import FarmPageComponent from "./components/farm-page";
 import TraceNavComponent from "./components/nav";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       /*/}
       <TraceNavComponent/>
       <Container className='contents'>
-
+        <FarmPageComponent/>
       </Container>
     </main>
   );
