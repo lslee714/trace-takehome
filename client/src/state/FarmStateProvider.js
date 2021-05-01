@@ -18,8 +18,8 @@ const FarmStateProvider = (props) => {
   }, []);
 
   //method to get farms from API endpoint
-  const getFarms = useCallback( async (nameSearch,  minRevenue, maxRevenue) => {
-    const url = getFarmsUrl(nameSearch, minRevenue, maxRevenue);
+  const getFarms = useCallback( async (name,  minRevenue, maxRevenue) => {
+    const url = getFarmsUrl(name, minRevenue, maxRevenue);
     const response = await fetch(url);
     const json = await response.json();
     loadFarms(json);
@@ -29,12 +29,15 @@ const FarmStateProvider = (props) => {
     if(!Object.keys(farmsState.farms).length) {
       getFarms();
     }
-  }, [farmsState.farms, getFarms]);
+    //we only care about this the first time the provider shows, after that, all filter driven
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <FarmStateContext.Provider value={
       {
         farms: farmsState.farms,
+        getFarms
       }
     }>
       {props.children}
