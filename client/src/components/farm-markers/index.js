@@ -3,6 +3,7 @@ import {Circle, Tooltip} from "react-leaflet";
 
 import {FARM_LOCATIONS} from "../../constants";
 import FarmStateContext from "../../state/FarmStateContext";
+import FarmMarkerToolTipComponent from "./FarmMarkerTooltip";
 
 
 
@@ -23,12 +24,12 @@ const FarmMarkersComponent = () => {
               radius={sizeOfMarker}>
               <Tooltip>
                 <article className='farm-info'>
-                  { farm.name }
+                  <FarmMarkerToolTipComponent farm={farm}/>
                 </article>
               </Tooltip>
             </Circle>
         )
-      };
+      }
     </>
     );
   };
