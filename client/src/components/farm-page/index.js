@@ -1,3 +1,7 @@
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import FarmFiltersComponent from "../farm-filters";
 import FarmMapComponent from "../farm-map";
 import FarmStateProvider from "../../state/FarmStateProvider";
 
@@ -10,8 +14,14 @@ const FarmPageComponent = () => {
   return (
     <>
       <FarmStateProvider>
-        {/*TODO add controls for filtering*/}
-        <FarmMapComponent/>
+        <Row className='h-100'>
+          <Col sm={4}>
+            <FarmFiltersComponent/>
+          </Col>
+          <Col sm={8}>
+            <FarmMapComponent/>
+          </Col>
+        </Row>
       </FarmStateProvider>
     </>
   );
