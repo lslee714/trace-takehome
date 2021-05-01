@@ -10,4 +10,8 @@ export const CENTER_OF_STATES = {
   'MN': [46.392410,	-94.636230],
   'NE': [41.500000,	-100.000000],
   'WI': [44.500000,	-89.500000],
+};
+
+export const ALT_STATE_COORDS = {
+  'CA': [40.397241, -123.075665]
 }
