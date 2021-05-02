@@ -9,7 +9,7 @@ const MapConsumer = (props) => {
 
   useEffect(
     () => {
-      navigator.geolocation.getCurrentPosition((location) => {
+      navigator.geolocation?.getCurrentPosition((location) => {
         const coords = location.coords;
         setCoordinates(
           [coords.latitude, coords.longitude]

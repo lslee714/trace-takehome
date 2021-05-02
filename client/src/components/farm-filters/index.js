@@ -28,7 +28,7 @@ const FarmFiltersComponent = () => {
   };
 
   return (
-    <aside className='farm-filters'>
+    <aside className='farm-filters' data-testid='filters'>
       <section className='header'>
         <label>Narrow down your search</label>
       </section>
