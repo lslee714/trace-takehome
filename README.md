@@ -14,6 +14,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 
 ### Without docker/as contributer and in "dev" environment
 - `cd server/`
+- `pip install -r requirements.txt`
 - `python3 run.py`
 
 (in separate terminal)
@@ -21,6 +22,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 - `cd client/`
 - `cp .env.example .env.local`
 - Edit `REACT_APP_BACKEND_DOMAIN` variable in .env.local to wherever backend is running, probably http://localhost:8000
+- `npm i`
 - `npm start`
 
 ## How to run tests
