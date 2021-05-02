@@ -8,8 +8,9 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 
 ## How to run: (all steps assumed to be in root project directory unless preceded by a `cd` step)
 
+
 ### With docker and in "prod" environment:
-- `./start-backend.sh && ./start-client.sh` (will run on http://localhost) 
+- `./start-client.sh && ./start-backend.sh` (will run on http://localhost)
 
 ### Without docker/as contributer and in "dev" environment
 - `cd server/`
@@ -55,7 +56,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 - The filters component could be broken out into a container that instantiates 3 individual filter components which would make it more robust for places where we might need just the name filter. I typically separate from the get go, but here I kept it as one component for time sake.
 - The name filter also allows filtering by field type and soil type. This might be a little too black magicky and would be something to definitely talk about with the team. If we wanted to keep this, I would probably suggest adding comma separation so that a user could search by name, field and soil separately.
 - The filters also do an "OR" query rather than "AND"s for the individual filters. I made this decision because we only had 7 farms in the dataset and doing an AND didn't yield anything special. OR allowed me to return distinct sets given the query. In a bigger data set, a user might expect ANDs, however.
-- The client testing is really basic. Probably could/should set up more. I've played a bit with client E2E tests (e.g. Cypress) and would set that up as well.   
+- The client testing is really basic. Probably could/should set up more. I've played a bit with client E2E tests (e.g. Cypress) and would set that up as well.
 
 
 ### Future direction / TODOs
@@ -63,7 +64,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 - Add a persistent layer!
   - Might want to also add an ORM layer into our API depending on how "lightweight" we want to keep it.
 - Also discuss w/ team and add geolocation for the farms/fields. This would allow me to pinpoint where the farms are rather than just picking random areas that I have in the file `constants.js`
-- Getting this deployed would be fun. I already have the dev docker files, so could make a similar prod one and deploy it to the cloud. Getting it running directly on a server is also feasible.
+- Getting this deployed would be fun. I already have the dev docker files, so could make a similar prod one with better setup (for env vars) and deploy it to the cloud. Getting it running directly on a server is also feasible.
 
 
 I really appreciate being given consideration by you all and Trace! Having a background in bioinformatics and a passion for the life sciences, the thought of developing software for that world is something I always had in mind but haven't truly had a chance to do until now. It's an exciting position to be in, so again, thank you!
