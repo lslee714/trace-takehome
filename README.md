@@ -30,7 +30,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 
 ### Client Tests
 - `cd client/`
-- `CI=true && npm test` OR just `npm test` for watch mode
+- `CI=true npm test` OR just `npm test` for watch mode
 
 
 
