@@ -68,3 +68,6 @@ I am really humbled to be given this consideration,  thanks a ton for the opport
 - Getting this deployed would be fun. I already have the dev docker files, so could make a similar prod one and deploy it to the cloud. Getting it running directly on a server is also feasible.
 
 
+I really appreciate being given consideration by you all and Trace! Having a background in bioinformatics and a passion for the life sciences, the thought of developing software for that world is something I always had in mind but haven't truly had a chance to do until now! It's an exciting position to be in so again, thank you.
+
+
