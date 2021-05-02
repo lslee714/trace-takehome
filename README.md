@@ -9,7 +9,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 ## How to run: (all steps assumed to be in root project directory unless preceded by a `cd` step)
 
 ### With docker and in "prod" environment:
-- `./start-client.sh && ./start-backend.sh`
+- `./start-backend.sh && ./start-client.sh` (will run on http://localhost) 
 
 ### Without docker/as contributer and in "dev" environment
 - `cd server/`
