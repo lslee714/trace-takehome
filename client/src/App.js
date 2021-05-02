@@ -10,7 +10,7 @@ function App() {
         This is just going to be a one pager app
       /*/}
       <TraceNavComponent/>
-      <section className='contents'>
+      <section className='contents' data-testid='content'>
         <FarmPageComponent/>
       </section>
     </main>

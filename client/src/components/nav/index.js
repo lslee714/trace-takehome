@@ -7,7 +7,7 @@ import './index.scss';
 
 const TraceNavComponent = () => {
   return (
-    <Navbar>
+    <Navbar data-testid='navbar'>
       <Navbar.Brand href="" className='nav'>
         <img
           alt="logo"
