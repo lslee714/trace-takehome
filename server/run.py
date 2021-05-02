@@ -5,7 +5,7 @@ from configs import get_config
 if __name__ == '__main__':
     import argparse
 
-    argParser = argparse.ArgumentParser(description='Run the Takeoffs API backend')
+    argParser = argparse.ArgumentParser(description='Run the Farm API')
 
     argParser.add_argument('--config', dest='config', nargs='?', choices=('debug', 'live'), default='debug',
                            help='The type of configuration to run the service in')
