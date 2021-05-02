@@ -1,12 +1,12 @@
 # Trace Takehome
 
 ---
-Hello! Thanks for taking time to go over this codebase and my work. I'm very excited for the opportunity and hope I showed what you were looking for in this exercise. I had a lot of fun doing this exercise and ended up going over the 3-4 hour recommendation; all in all, this probably took me about 6 hours? The app architecture (where server and client are completely separated) is something I've done before, so while that was not requested, I sprinkled that in to hopefully help increase my candidacy! :crossed_fingers:  
+Hello! Thanks for taking time to go over this codebase and my work. I'm very excited for the opportunity and hope I showed what you were looking for in this exercise. I had a lot of fun doing this exercise and ended up going over the 3-4 hour recommendation 🤓; all in all, this probably took me about 6 hours? The app architecture (where server and client are completely separated) is something I've done before, so while that was not requested, I sprinkled that in to hopefully help increase my candidacy! :crossed_fingers:  
 
 
-I am really humbled to be given this consideration,  thanks a ton for the opportunity!
+I am really excited and humbled to be given this consideration, thanks a ton for the opportunity!
 
-## How to run:
+## How to run: (all steps assumed to be in root project directory unless preceded by a `cd` step)
 
 ### With docker and in "prod" environment:
 - `./start-client.sh && ./start-backend.sh`
@@ -30,8 +30,6 @@ I am really humbled to be given this consideration,  thanks a ton for the opport
 ### Client Tests
 - `cd client/`
 - `CI=true && npm test` OR just `npm test` for watch mode
-
-
 
 
 
