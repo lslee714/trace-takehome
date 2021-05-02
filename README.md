@@ -1,12 +1,12 @@
 # Trace Takehome
 
 ---
-Hello! Thanks for taking time to go over this codebase and my work. I'm very excited for the opportunity and hope I showed what you were looking for in this exercise. I had a lot of fun doing this exercise and ended up going over the 3-4 hour recommendation; all in all, this probably took me about 6 hours? The app architecture (where server and client are completely separated) is something I've done before, so while that was not requested, I sprinkled that in to hopefully help increase my candidacy! :crossed_fingers:  
+Hello! Thanks for taking time to go over this codebase and my work. I'm very excited for the opportunity and hope I showed what you were looking for in this exercise. I had a lot of fun doing this exercise and ended up going over the 3-4 hour recommendation 🤓; all in all, this probably took me about 6 hours? The app architecture (where server and client are completely separated) is something I've done before, so while that was not requested, I sprinkled that in to hopefully help increase my candidacy! :crossed_fingers:  
 
 
-I am really humbled to be given this consideration,  thanks a ton for the opportunity!
+I am really excited and humbled to be given this consideration, thanks a ton for the opportunity!
 
-## How to run:
+## How to run: (all steps assumed to be in root project directory unless preceded by a `cd` step)
 
 ### With docker and in "prod" environment:
 - `./start-client.sh && ./start-backend.sh`
@@ -30,8 +30,6 @@ I am really humbled to be given this consideration,  thanks a ton for the opport
 ### Client Tests
 - `cd client/`
 - `CI=true && npm test` OR just `npm test` for watch mode
-
-
 
 
 
@@ -66,5 +64,8 @@ I am really humbled to be given this consideration,  thanks a ton for the opport
   - Might want to also add an ORM layer into our API depending on how "lightweight" we want to keep it.
 - Also discuss w/ team and add geolocation for the farms/fields. This would allow me to pinpoint where the farms are rather than just picking random areas that I have in the file `constants.js`
 - Getting this deployed would be fun. I already have the dev docker files, so could make a similar prod one and deploy it to the cloud. Getting it running directly on a server is also feasible.
+
+
+I really appreciate being given consideration by you all and Trace! Having a background in bioinformatics and a passion for the life sciences, the thought of developing software for that world is something I always had in mind but haven't truly had a chance to do until now. It's an exciting position to be in, so again, thank you!
 
 
