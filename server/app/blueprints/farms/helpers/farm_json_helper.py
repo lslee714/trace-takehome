@@ -32,10 +32,16 @@ class FarmJsonHelper:
             #also would love to make the farm_name more robust, e.g. can separate multiple w/ comma
             if farm_name and farm_name.lower() in name.lower():
                 results[id] = farm
-            if min_revenue and revenue >= int(min_revenue):
-                results[id] = farm #this could/will override results but we dont care in an OR situation
-            if max_revenue and revenue <= int(max_revenue):
-                results[id] = farm #this could/will override results but we dont care in an OR situation
+            try:
+                if min_revenue and revenue >= int(min_revenue):
+                    results[id] = farm #this could/will override results but we dont care in an OR situation
+            except ValueError as e:
+                pass
+            try:
+                if max_revenue and revenue <= int(max_revenue):
+                    results[id] = farm #this could/will override results but we dont care in an OR situation
+            except ValueError as e:
+                pass
         return results
 
     def __get_farm_name(self, farm):

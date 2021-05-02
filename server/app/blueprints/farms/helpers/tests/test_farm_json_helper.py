@@ -90,3 +90,12 @@ class TestGetFarms(TestCase):
         name_query_param = {'farm_name': name_query}
         results = helper.get_farms(name_query_param)
         self.assertEquals(len(results), 0)
+
+    def test_with_invalid_number(self):
+        """Should not explode and still return a valid result"""
+        helper = FarmJsonHelper()
+        name_query = 'Not a real farm'
+        max_revenue_query = 'im not a number'
+        name_query_param = {'farm_name': name_query, "max_revenue": max_revenue_query}
+        results = helper.get_farms(name_query_param)
+        self.assertEquals(len(results), 0)
