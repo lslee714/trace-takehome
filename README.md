@@ -10,7 +10,7 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 
 
 ### With docker and in "prod" environment:
-- `./start-client.sh && ./start-backend.sh` (will run on http://localhost)
+- `./start-client.sh && ./start-server.sh` (will run on http://localhost)
 
 ### Without docker/as contributer and in "dev" environment
 - `cd server/`
@@ -33,7 +33,6 @@ I am really excited and humbled to be given this consideration, thanks a ton for
 ### Client Tests
 - `cd client/`
 - `CI=true npm test` OR just `npm test` for watch mode
-
 
 
 
@@ -67,8 +66,5 @@ I am really excited and humbled to be given this consideration, thanks a ton for
   - Might want to also add an ORM layer into our API depending on how "lightweight" we want to keep it.
 - Also discuss w/ team and add geolocation for the farms/fields. This would allow me to pinpoint where the farms are rather than just picking random areas that I have in the file `constants.js`
 - Getting this deployed would be fun. I already have the dev docker files, so could make a similar prod one with better setup (for env vars) and deploy it to the cloud. Getting it running directly on a server is also feasible.
-
-
-I really appreciate being given consideration by you all and Trace! Having a background in bioinformatics and a passion for the life sciences, the thought of developing software for that world is something I always had in mind but haven't truly had a chance to do until now. It's an exciting position to be in, so again, thank you!
 
 
